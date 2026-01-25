@@ -34,14 +34,15 @@ This portfolio showcases my skills, projects, achievements, and contact details 
     package
 
 📂 Project Setup
-   1️⃣ Clone the repository
+   
+    1️⃣ Clone the repository
     git clone https://github.com/yourusername/my-portfolio.git
     cd my-portfolio
 
-  2️⃣ Install dependencies
+    2️⃣ Install dependencies
     npm install
 
-  3️⃣ Run development server
+    3️⃣ Run development server
     npm run dev
 
 
