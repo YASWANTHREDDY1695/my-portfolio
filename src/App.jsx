@@ -954,10 +954,10 @@ const Resume = () => (
                </a>
                
                <a 
-                   href="/Avula%20Sai%20Praneeth%20Yaswanth%20Reddy.pdf" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   className="mt-6 text-xs text-slate-500 hover:text-cyan-400 transition-colors cursor-pointer flex items-center justify-center gap-1"
+                  href="/Avula%20Sai%20Praneeth%20Yaswanth%20Reddy.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="mt-6 text-xs text-slate-500 hover:text-cyan-400 transition-colors cursor-pointer flex items-center justify-center gap-1"
                 >
                   <ExternalLink size={12} /> Or view in browser
                </a>
@@ -1078,7 +1078,7 @@ const Contact = () => {
             </a>
           </RevealOnScroll>
           <RevealOnScroll delay={200}>
-            <a href="https://www.linkedin.com/in/yaswanthreddy1695" target="_blank" rel="noopener noreferrer" className="bg-slate-900/50 border border-slate-800 p-6 rounded hover:border-cyan-500/50 transition-colors group cursor-pointer h-full flex flex-col items-center justify-center block">
+            <a href="https://www.linkedin.com/in/avula-sai-praneeth-yaswanth-reddy-590279323" target="_blank" rel="noopener noreferrer" className="bg-slate-900/50 border border-slate-800 p-6 rounded hover:border-cyan-500/50 transition-colors group cursor-pointer h-full flex flex-col items-center justify-center block">
                 <Linkedin className="mx-auto text-cyan-400 mb-3 group-hover:scale-110 transition-transform" size={24} />
                 <div className="text-sm font-bold text-white mb-1">LinkedIn</div>
                 <div className="text-xs text-slate-500 group-hover:text-cyan-300 transition-colors text-center">Avula Praneeth Reddy</div>
@@ -1153,7 +1153,7 @@ const Footer = () => (
         <div className="text-xs font-bold text-white uppercase tracking-widest mb-6">Connect</div>
         <div className="flex gap-4">
              <a href="https://github.com/YASWANTHREDDY1695" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-900 rounded hover:bg-slate-800 text-slate-400 hover:text-white cursor-pointer transition-colors hover:scale-110"><Github size={20} /></a>
-             <a href="https://www.linkedin.com/in/yaswanthreddy1695" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-900 rounded hover:bg-slate-800 text-slate-400 hover:text-white cursor-pointer transition-colors hover:scale-110"><Linkedin size={20} /></a>
+             <a href="https://www.linkedin.com/in/avula-sai-praneeth-yaswanth-reddy-590279323" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-900 rounded hover:bg-slate-800 text-slate-400 hover:text-white cursor-pointer transition-colors hover:scale-110"><Linkedin size={20} /></a>
              <a href="https://x.com/Praneet94433056" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-900 rounded hover:bg-slate-800 text-slate-400 hover:text-white cursor-pointer transition-colors hover:scale-110"><Twitter size={20} /></a>
              <a href="mailto:praneethavula160905@gmail.com" className="p-2 bg-slate-900 rounded hover:bg-slate-800 text-slate-400 hover:text-white cursor-pointer transition-colors hover:scale-110"><Mail size={20} /></a>
         </div>
