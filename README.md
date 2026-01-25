@@ -60,17 +60,18 @@ To preview the production build:
     npm run preview
 
 📁 Project Structure (Basic)
-my-portfolio/
-│── public/
-│── src/
-│   ├── components/
-│   ├── assets/
-│   ├── App.jsx
-│   ├── main.jsx
-│── index.html
-│── package.json
-│── tailwind.config.js
-│── vite.config.js
+
+    my-portfolio/
+    │── public/
+    │── src/
+    │   ├── components/
+    │   ├── assets/
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │── index.html
+    │── package.json
+    │── tailwind.config.js
+    │── vite.config.js
 
 🌍 Deployment
 
