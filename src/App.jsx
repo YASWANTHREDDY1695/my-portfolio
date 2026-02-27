@@ -29,7 +29,12 @@ import {
   ShoppingCart,
   Vote,
   Sun,
-  Moon
+  Moon,
+  Cloud,
+  Network,
+  Gamepad2,
+  Utensils,
+  GraduationCap
 } from 'lucide-react';
 
 /**
@@ -71,25 +76,53 @@ const EXTRA_SKILLS = ["Object-Oriented Programming", "Console Applications", "AP
 
 const PROJECTS = [
   {
-    title: "Online Shopping System",
-    description: "A comprehensive console-based C++ application simulating an e-commerce platform. Features product browsing, cart management, and order processing.",
-    tags: ["C++", "File I/O", "Modular Programming"],
+    title: "AWS Data Lake Continuum",
+    description: "Engineered a serverless ETL pipeline using AWS Lambda, S3, and Glue to automate the ingestion and transformation of raw datasets. Implemented an event-driven architecture and utilized Amazon Athena for SQL-based querying.",
+    tags: ["AWS", "Lambda", "S3", "Athena", "Python"],
     featured: true,
-    icon: <ShoppingCart className="text-yellow-600 dark:text-yellow-400" />
+    icon: <Cloud className="text-blue-600 dark:text-blue-400" />
+  },
+  {
+    title: "Chronic Kidney Disease Prediction",
+    description: "Developed a diagnostic machine learning tool using Scikit-Learn and Random Forest. Applied SMOTE for class imbalance and StandardScaler for feature normalization, deploying the final model via a Flask web interface.",
+    tags: ["Machine Learning", "Python", "Flask", "Scikit-Learn"],
+    featured: true,
+    icon: <Activity className="text-red-600 dark:text-red-400" />
+  },
+  {
+    title: "FoodSnapChef",
+    description: "Built a Streamlit application that identifies food items using an ensemble of deep learning models and the Google Gemini Pro Vision API, retrieving recipes from a custom dataset of 6,000+ entries.",
+    tags: ["AI", "Python", "Streamlit", "Gemini API"],
+    featured: true,
+    icon: <Utensils className="text-orange-600 dark:text-orange-400" />
+  },
+  {
+    title: "Inter-Process Communication System",
+    description: "Engineered high-performance communication modules using Pipes and Message Queues in C. Implemented a Producer-Consumer model leveraging system calls like fork() and msgget().",
+    tags: ["C", "Operating Systems", "IPC"],
+    featured: false,
+    icon: <Network className="text-cyan-600 dark:text-cyan-400" />
+  },
+  {
+    title: "Tic-Tac-Toe Game (8086)",
+    description: "Programmed low-level game logic in x86 Assembly, utilizing hardware-level memory segmentation and BIOS Interrupts (INT 10h, 21h) for screen management and input validation.",
+    tags: ["Assembly", "x86", "Low-Level"],
+    featured: false,
+    icon: <Gamepad2 className="text-purple-600 dark:text-purple-400" />
   },
   {
     title: "Spotify Clone",
-    description: "A responsive web interface replicating Spotify. Integrated with the Spotify Developer API to fetch and render track data, manage playlists, and simulate playback.",
-    tags: ["HTML", "CSS", "JavaScript", "PHP", "Spotify API"],
-    featured: true,
+    description: "Developed a responsive web application using HTML, CSS, JavaScript, and PHP. Integrated the Spotify Developer API to render real-time track metadata and playlists.",
+    tags: ["Web Dev", "PHP", "JavaScript", "Spotify API"],
+    featured: false,
     icon: <Music className="text-green-600 dark:text-green-400" />
   },
   {
-    title: "Online Election System",
-    description: "Secure voting system built in C. Implements candidate registration, voter authentication, and duplicate vote prevention using robust file handling.",
-    tags: ["C", "Security", "File Handling", "Validation"],
+    title: "OBE Management System",
+    description: "Designed a C-based Outcome-Based Education management system with full CRUD functionality. Optimized data retrieval using Quick Sort and Binary Search algorithms.",
+    tags: ["C", "Data Structures", "Algorithms"],
     featured: false,
-    icon: <Vote className="text-cyan-600 dark:text-cyan-400" />
+    icon: <GraduationCap className="text-yellow-600 dark:text-yellow-400" />
   }
 ];
 
