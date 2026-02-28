@@ -701,10 +701,12 @@ const Resume = () => (
                    <div className="text-center"><div className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">3+</div><div className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Projects</div></div>
                    <div className="text-center"><div className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">3.01</div><div className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">CGPA</div></div>
                </div>
-               <a href="/Avula%20Sai%20Praneeth%20Yaswanth%20Reddy.pdf" download="Avula_Sai_Praneeth_Yaswanth_Reddy.pdf" className="w-full py-4 bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-bold rounded-lg uppercase tracking-widest hover:shadow-lg transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 cursor-pointer block">
+               <a href="/resume.pdf" download="Avula_Sai_Praneeth_Yaswanth_Reddy.pdf" className="w-full py-4 bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-bold rounded-lg uppercase tracking-widest hover:shadow-lg transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 cursor-pointer block">
                    <Download size={20} /> Download Resume
                </a>
-               <div className="mt-6 text-xs text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors cursor-pointer flex items-center justify-center gap-1"><ExternalLink size={12} /> Or view in browser</div>
+               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="mt-6 text-xs text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors cursor-pointer flex items-center justify-center gap-1">
+                   <ExternalLink size={12} /> Or view in browser
+               </a>
              </div>
          </div>
        </RevealOnScroll>
