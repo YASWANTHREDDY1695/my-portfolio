@@ -141,7 +141,7 @@ Location: Amaravati, India`,
         certifications: () => `<strong>Credentials & Certifications:</strong>
 --------------------------------------------------
 • <strong>AWS Certified Cloud Practitioner</strong>
-  Verification ID: 9ab83bbf284442228b6ece699c927dac
+  Verified via AWS Education Portal
 • <strong>Oracle Certified Professional: Java SE 17 Developer</strong>
   Verified via Oracle Education Portal
 • <strong>Salesforce Developer Agentblazer Champion</strong>
