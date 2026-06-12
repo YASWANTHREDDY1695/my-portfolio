@@ -1,84 +1,47 @@
-🌐 My Portfolio Website
+# 🌐 Developer Portfolio
 
-A modern, responsive personal portfolio website built using React + Vite and styled with Tailwind CSS.
-This portfolio showcases my skills, projects, achievements, and contact details in a clean and minimal UI.
+A professional, simple, and clean developer portfolio website for **Avula Sai Praneeth Yaswanth Reddy**, optimized for showcase of **AI/ML Engineering** and **Cloud Architecture** skills.
 
-🚀 Features
+Featuring a dark theme design with interactive styling, glassmorphism, responsive grids, and an **interactive mock terminal dashboard**!
 
-    ⚡ Fast performance with Vite
+---
 
-    🎨 Modern UI using Tailwind CSS
+## 🚀 Key Features
 
-    📱 Fully responsive (Mobile / Tablet / Desktop)
+* 💻 **Interactive Bash Terminal**: A mini-terminal in the Hero section where visitors can type commands (`help`, `skills`, `projects`, `certifications`, `education`, `about`, `contact`, `clear`) to interactively query information.
+* 🎨 **Premium Aesthetics**: Slate-dark background, blueprint grid overlays, glowing neon radial card drops, and customizable scrollbars.
+* ⚙️ **Smooth Animations**: Autocomplete blinking cursors, typing effects, hover scaling, and section links underliners.
+* 🎯 **Lucide Icons Integration**: SVG icon components replacing standard text blocks.
+* 📬 **Validating Contact Form**: Built-in client-side validation, floating label states, and button loading spinners.
 
-    🧩 Smooth components and clean layout
+---
 
-    🧑‍💻 Projects section to showcase work
+## 🛠️ Tech Stack
 
-    📩 Contact section for easy reach
+* **HTML5** (Semantic structures, accessibility-friendly)
+* **CSS3** (Variables/tokens, custom transitions, grid layouts, glassmorphism)
+* **JavaScript** (Typing controllers, terminal command processors, form interceptors)
+* **Lucide CDN** (Dynamic vector rendering)
 
-    ✅ Optimized build for deployment
+---
 
-🛠️ Tech Stack
+## 📂 Project Structure
 
-    React (Vite)
+```
+Portfolio/
+├── index.html   # Main page structure & layouts
+├── style.css    # Typography, colors, tokens, animation guidelines
+├── app.js       # Observers, mock terminal, and validators
+└── README.md    # Project documentation
+```
 
-    Tailwind CSS
+---
 
-    JavaScript
+## 🏗️ Local Running
 
-    Lucide Icons
+Simply open the `index.html` file in any modern web browser, or launch a live reloading server using `npx`:
 
-    ESLint
-
-    package
-
-📂 Project Setup
-   
-1️⃣ Clone the repository
-
-    git clone https://github.com/yourusername/my-portfolio.git
-    cd my-portfolio
-
-2️⃣ Install dependencies
-
-    npm install
-
-3️⃣ Run development server
-
-    npm run dev
-
-
-The website will run locally and you can open it in the browser.
-
-🏗️ Build for Production
-    npm run build
-
-
-To preview the production build:
-
-    npm run preview
-
-📁 Project Structure (Basic)
-
-    my-portfolio/
-    │── public/
-    │── src/
-    │   ├── components/
-    │   ├── assets/
-    │   ├── App.jsx
-    │   ├── main.jsx
-    │── index.html
-    │── package.json
-    │── tailwind.config.js
-    │── vite.config.js
-
-🌍 Deployment
-
-You can deploy this portfolio easily on:
-
-GitHub Pages
-
-Vercel
-
-Netlify
+```bash
+# Start a local hot-reloading dev server on port 3000
+npx -y browser-sync start --server --files "index.html, style.css, app.js" --port 3000
+```

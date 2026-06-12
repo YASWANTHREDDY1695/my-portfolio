@@ -1,13 +1,538 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avula Sai Praneeth Yaswanth Reddy | AI/ML & Cloud Architect</title>
+    <meta name="description" content="Portfolio of Avula Sai Praneeth Yaswanth Reddy - Computer Science undergraduate specializing in AI/ML Engineering and Cloud Architecture.">
+    <!-- Google Fonts: Outfit & Inter & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background grid/glow effects -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">praneeth.dev</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Available for Internships</span>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section container">
+            <div class="hero-grid">
+                <div class="hero-info">
+                    <div class="hero-badge">
+                        <i data-lucide="sparkles" class="badge-icon"></i>
+                        <span>AI/ML & Cloud Architecture</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Avula Sai Praneeth <br>
+                        <span class="gradient-text">Yaswanth Reddy</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        B.Tech Computer Science student building multi-agent AI systems, serverless cloud-native platforms, and generative AI solutions.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get in touch</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/YASWANTHREDDY1695" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/avula-sai-praneeth-yaswanth-reddy-590279323" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:praneethavula160905@gmail.com" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <span class="hero-location">
+                            <i data-lucide="map-pin"></i>
+                            <span>Amaravati, India</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Interactive Terminal Column -->
+                <div class="hero-terminal-container">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">bash - praneeth@portfolio:~</span>
+                            <div class="terminal-actions">
+                                <i data-lucide="terminal" size="14"></i>
+                            </div>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <div class="terminal-line system-msg">
+                                Initializing connection to praneeth-portfolio-agent v1.0.0...
+                            </div>
+                            <div class="terminal-line system-msg">
+                                System check: ONLINE. Type <span class="highlight-cmd">'help'</span> to view commands.
+                            </div>
+                            <div class="terminal-line typing-container">
+                                <span class="prompt">guest@praneeth.dev:~$</span>
+                                <span class="typed-text" id="initial-typing"></span><span class="cursor">|</span>
+                            </div>
+                        </div>
+                        <div class="terminal-input-row">
+                            <span class="prompt">guest@praneeth.dev:~$</span>
+                            <input type="text" id="terminal-input" autocomplete="off" placeholder="Type a command..." aria-label="Terminal input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-description">My background, profile and academic details</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <h3>Profile Summary</h3>
+                        <p>
+                            I am a Computer Science undergraduate specializing in AI/ML Engineering and Cloud Architecture. I possess proven expertise in building multi-agent AI systems, serverless cloud-native platforms, and generative AI applications using modern frameworks and high-performance APIs. I am driven by the potential of AI to automate workflows and optimize complex operational systems.
+                        </p>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="about-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <div class="edu-timeline">
+                            <div class="edu-item">
+                                <span class="edu-year">2023 — 2027</span>
+                                <h4 class="edu-school">SRM University AP</h4>
+                                <p class="edu-degree">B.Tech in Computer Science Engineering</p>
+                                <span class="edu-gpa">Current CGPA: <strong>7.8 / 10</strong></span>
+                            </div>
+                            <div class="edu-item">
+                                <span class="edu-year">2021 — 2023</span>
+                                <h4 class="edu-school">Sri Bhavishya Junior College</h4>
+                                <p class="edu-degree">Intermediate (MPC)</p>
+                                <span class="edu-gpa">Score: <strong>879 / 1000</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-description">Tools, frameworks, and programming languages I specialize in</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- AI / ML Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i data-lucide="cpu" class="category-icon text-blue"></i>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Gemini Pro</span>
+                            <span class="skill-tag">YOLOv8</span>
+                            <span class="skill-tag">LSTM</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">NLP</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud / Backend Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i data-lucide="database" class="category-icon text-emerald"></i>
+                            <h3>Cloud & Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">AWS (S3, Lambda, Glue, Athena)</span>
+                            <span class="skill-tag">Salesforce (LWC, SOQL, Flows)</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Serverless Architecture</span>
+                            <span class="skill-tag">Git & CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Card -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i data-lucide="code" class="category-icon text-purple"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java SE 17</span>
+                            <span class="skill-tag">C / C++</span>
+                            <span class="skill-tag">Apex (Salesforce)</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">HTML5 / CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-description">My professional journey and industry experience</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-meta">
+                                <span class="timeline-role">Salesforce Developer Intern</span>
+                                <span class="timeline-company">SmartBridge</span>
+                            </div>
+                            <span class="timeline-date">
+                                <i data-lucide="calendar"></i>
+                                May 2025 – July 2025
+                            </span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="experience-bullets">
+                                <li>
+                                    <strong>Architected HandsMen Threads:</strong> Designed and implemented a fashion CRM solution utilizing Apex Triggers, SOQL, and Salesforce Flows for workflow automation.
+                                </li>
+                                <li>
+                                    <strong>Integrated SkillWallet:</strong> Leveraged decentralized identity protocols to establish secure, verifiable role-based access control.
+                                </li>
+                                <li>
+                                    <strong>Superbadger Champion:</strong> Achieved Agentblazer Champion status by completing the Apex Specialist and LWC Basics superbadges.
+                                </li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Apex</span>
+                                <span class="tag">LWC</span>
+                                <span class="tag">SOQL</span>
+                                <span class="tag">Salesforce Flows</span>
+                                <span class="tag">SkillWallet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-description">Key systems and applications I have engineered</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- FinAgent Pro -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-label">AI/ML & Frontend</span>
+                            <div class="project-metric">
+                                <i data-lucide="trending-up"></i>
+                                Sharpe: 1.87
+                            </div>
+                        </div>
+                        <h3 class="project-title">FinAgent Pro</h3>
+                        <p class="project-desc">
+                            Intelligent Wealth Orchestration engine delivering predictive financial analytics and optimized risk-return strategies.
+                        </p>
+                        <ul class="project-features">
+                            <li>Engineered a multi-agent AI system using Gemini Pro and LSTM models.</li>
+                            <li>Implemented a specialized Wealth Orchestration engine with portfolio optimization.</li>
+                            <li>Developed a real-time dashboard with React.js featuring interactive technical indicators.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Gemini Pro</span>
+                                <span>LSTM</span>
+                                <span>React.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Source code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud-Native Logistics Platform -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-label">AWS Cloud & NLP</span>
+                            <div class="project-metric">
+                                <i data-lucide="server"></i>
+                                18+ Services
+                            </div>
+                        </div>
+                        <h3 class="project-title">Cloud-Native Logistics</h3>
+                        <p class="project-desc">
+                            Serverless tracking and analysis platform handling global shipment tracking and automated parsing of logistics data.
+                        </p>
+                        <ul class="project-features">
+                            <li>Designed a serverless architecture on AWS utilizing Lambda, S3, and DynamoDB.</li>
+                            <li>Integrated AWS Comprehend NLP to automate document parsing from unstructured data.</li>
+                            <li>Optimized operational efficiency by reducing manual monitoring through SNS and CloudWatch.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>AWS Lambda</span>
+                                <span>DynamoDB</span>
+                                <span>NLP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Source code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FoodSnapChef -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-label">AI & Deep Learning</span>
+                            <div class="project-metric">
+                                <i data-lucide="database"></i>
+                                6k+ Recipes
+                            </div>
+                        </div>
+                        <h3 class="project-title">FoodSnapChef</h3>
+                        <p class="project-desc">
+                            AI-Powered food recognition and nutritional guidance application parsing large Indian recipe datasets.
+                        </p>
+                        <ul class="project-features">
+                            <li>Developed a Streamlit app identifying food items using an ensemble of deep learning models.</li>
+                            <li>Integrated Google Gemini Pro Vision API for real-time image recognition.</li>
+                            <li>Engineered a custom parsing layer for nutritional extraction from a 6,000+ recipe dataset.</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Streamlit</span>
+                                <span>Gemini Pro Vision</span>
+                                <span>YOLOv8</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Source code">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-description">Credentials and professional milestones verified</p>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- AWS CCP -->
+                    <div class="cert-card">
+                        <div class="cert-icon-wrapper text-blue">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">AWS Certified Cloud Practitioner</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <span class="cert-verification">Verify ID: 9ab83bbf284442228b6ece699c927dac</span>
+                        </div>
+                        <a href="https://aws.amazon.com/verification" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">
+                            <span>Verify</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+
+                    <!-- Oracle SE 17 -->
+                    <div class="cert-card">
+                        <div class="cert-icon-wrapper text-purple">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Oracle Certified Professional</h3>
+                            <p class="cert-issuer">Java SE 17 Developer</p>
+                            <span class="cert-verification">Credentials verified via Oracle portal</span>
+                        </div>
+                        <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=CACA4A8D9A357C60643E60D64BB2E9FE65FD1484BF3D51C9361EF850C100AF17" target="_blank" rel="noopener noreferrer" class="cert-verify-btn">
+                            <span>Verify</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+
+                    <!-- Salesforce Champion -->
+                    <div class="cert-card">
+                        <div class="cert-icon-wrapper text-emerald">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3 class="cert-name">Salesforce Developer Agentblazer Champion</h3>
+                            <p class="cert-issuer">SmartBridge Internship Program</p>
+                            <span class="cert-verification">Completed Apex & LWC superbadges</span>
+                        </div>
+                        <span class="cert-verify-btn disabled">
+                            <span>Completed</span>
+                            <i data-lucide="check"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-description">Have a project, job opening, or want to discuss AI / Cloud architecture? Send a message!</p>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out through any of these channels or use the contact form.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Email Me</span>
+                                    <a href="mailto:praneethavula160905@gmail.com">praneethavula160905@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span>Location</span>
+                                    <span>Amaravati, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-grid">
+                            <a href="https://github.com/YASWANTHREDDY1695" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/avula-sai-praneeth-yaswanth-reddy-590279323" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <form id="portfolio-contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" required placeholder="e.g. john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Project Proposal / Internship Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" required rows="5" placeholder="Write your message details here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span id="btn-text">Send Message</span>
+                                <i data-lucide="send" id="btn-icon"></i>
+                            </button>
+                            <div id="form-feedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Avula Sai Praneeth Yaswanth Reddy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
 </html>
